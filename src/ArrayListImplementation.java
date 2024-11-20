@@ -17,19 +17,45 @@ class ListDemo {
 
     public void getElement(){
         ListIterator iterator = list.listIterator();
+        System.out.println("List from frontside = ");
         while (iterator.hasNext()){
             System.out.print(iterator.next() + "\t");
         }
         System.out.println();
+        System.out.println("List from backside = ");
         while (iterator.hasPrevious()){
             System.out.print(iterator.previous() + "\t");
         }
+        System.out.println();
     }
 
 
     public void addElementAtGivenPosition(int position,Object data){
             list.add(position,data);
+        System.out.println("List after adding data at specific position");
         System.out.print(list+"\t");
+        System.out.println();
+    }
+
+    public void removeData(Object data){
+        list.remove(data);
+        System.out.println("List After removing certain data");
+        System.out.print(list + "\t");
+        System.out.println();
+    }
+
+    public void removeDataAtSpecificPosition(int position){
+        list.remove(position);
+        System.out.println("List after remove data at specific position =");
+        System.out.println(list);
+    }
+
+    public void clearAll(){
+        list.clear();
+        System.out.println(list);
+    }
+    public void isContain(Object data){
+        System.out.println(list.contains(data));
     }
 
 
@@ -40,6 +66,11 @@ public class ArrayListImplementation {
         obj.addData();
         obj.getElement();
         obj.addElementAtGivenPosition(1,"Java");
+        obj.removeData(15);
+        obj.removeDataAtSpecificPosition(2);
+        obj.isContain("java");
+        obj.clearAll();
+
 
 
     }
