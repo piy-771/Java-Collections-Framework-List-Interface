@@ -58,6 +58,10 @@ class ListDemo {
         System.out.println(list.contains(data));
     }
 
+    public  boolean  isEmptyOrNot(){
+        return list.isEmpty();
+    }
+
 
 }
 public class ArrayListImplementation {
@@ -70,6 +74,7 @@ public class ArrayListImplementation {
         obj.removeDataAtSpecificPosition(2);
         obj.isContain("java");
         obj.clearAll();
+        System.out.println(obj.isEmptyOrNot());
 
 
 
