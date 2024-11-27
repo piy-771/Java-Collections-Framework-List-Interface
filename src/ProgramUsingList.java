@@ -40,6 +40,8 @@ public class ProgramUsingList {
         list.add(new Employee(124,"Jiya",50000));
         list.add(new Employee(125,"Piyush",80000));
 
+
+        System.out.println(list);
         Iterator i = list.iterator();
         while (i.hasNext()){
             Employee employee = (Employee) i.next();

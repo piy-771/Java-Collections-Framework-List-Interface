@@ -18,6 +18,7 @@ class ListDemo {
     public void getElement(){
         ListIterator iterator = list.listIterator();
         System.out.println("List from frontside = ");
+
         while (iterator.hasNext()){
             System.out.print(iterator.next() + "\t");
         }
